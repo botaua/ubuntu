@@ -26,11 +26,11 @@ jobs:
 
       - name: Add ngrok token
         run: | 
-          ngrok config add-authtoken $NGROK_ATUH_TOKEN
+          ngrok config add-authtoken 2cAtPD1l6HomBtFv2DBmXBqhSOR_fwwAvnGF61JayRGZXeQ3
 
       - name: Run ngrok
         run: |
-          ngrok http 80
+          ngrok http 8080
 
           
 
