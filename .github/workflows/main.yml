@@ -21,7 +21,7 @@ jobs:
 
       - name: Add User
         run: |
-          sudo adduser red
+          sudo useradd red
           echo "red:red" | sudo chpasswd 
 
       - name: Add ngrok token
@@ -30,7 +30,7 @@ jobs:
 
       - name: Run ngrok
         run: |
-          ngrok http 8080
+          ngrok tcp 22
 
           
 
